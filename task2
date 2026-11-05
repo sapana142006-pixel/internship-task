@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h>SAPANA YADAV</h>
+    <h2>About Me</h2>
+    <p>I am currently pursuing my bachelor's degree in computer science &  engineering from <b>KASHI INSTITUTE OF TECHNOLOGY</b>
+    I enjoy learning new skills, exploring creative ideas, and improving my problem solving abilities. My goal is to become a
+    skilled professional. Looking forward to excel in my journey.</p>
+    <h2>Skills</h2>
+    <ul>
+        <li>C++</li>
+        <li>C</li>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Microsoft Office</li>
+
+    </ul>
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Watching MOVIE</li>
+        <li>Watching Podcasts</li>
+        <li>Drawing</li>
+        <li>Paper Crafts</li>
+    </ul>
+    <h2>Image</h2>
+    <div>
+        <img src="https://pixabay.com/photos/leaf-heart-autumn-nature-10544685/" alt="Loading" style="height: 200px;width: 200px;display: flex;">
+    </div>
+    <h2>Website Link</h2>
+    <a href="www.google.com">Google</a>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz App</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>My Quiz App</h1>
+
+        
+        <form id="quizForm">
+            <div id="questionsContainer"></div>
+
+            
+            <p id="errorMessage" class="error-msg"></p>
+
+            
+            <button type="submit" id="submitBtn" class="btn primary-btn">Submit Quiz</button>
+        </form>
+
+        
+        <div id="resultContainer" class="result-box hidden">
+            <h2>Quiz Completed!</h2>
+            <p class="score-display">Your Score: <span id="scoreText">0/5</span></p>
+            <p id="feedbackMessage" class="feedback-msg"></p>
+            
+            
+            <button id="restartBtn" class="btn secondary-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

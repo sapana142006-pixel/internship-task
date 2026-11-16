@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    transition: background-color 0.5s ease;
+}
+
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.color-display {
+    font-size: 18px;
+    color: #475569;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.color-display span {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.color-btn {
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.color-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.color-btn:active {
+    transform: translateY(0);
+}
+
+
+.red {
+    background-color: #ef4444;
+    color: white;
+}
+
+.green {
+    background-color: #22c55e;
+    color: white;
+}
+
+.blue {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.yellow {
+    background-color: #eab308;
+    color: #1e293b; 
+}
+
+.random {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    color: white;
+}
+
+.reset {
+    background-color: #4b4c4d;
+    color: rgb(246, 241, 241);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .color-btn {
+        width: 100%;
+    }
+}

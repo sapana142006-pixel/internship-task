@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>My Image Gallery</h1>
+
+      
+        <div id="imageCounter" class="counter">Image 1 of 4</div>
+
+       
+        <div class="image-wrapper">
+            <button id="prevBtn" class="nav-btn prev">&larr;</button>
+            <div class="img-content">
+                <img id="galleryImage" src="" alt="Gallery Image">
+                <p id="imageCaption" class="caption"></p>
+            </div>
+            <button id="nextBtn" class="nav-btn next">&rarr;</button>
+        </div>
+
+        <div class="slideshow-control">
+            <button id="playPauseBtn" class="play-btn">Play Slideshow</button>
+        </div>
+
+        <div id="dotsContainer" class="dots-container"></div>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

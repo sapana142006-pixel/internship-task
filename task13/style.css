@@ -1,0 +1,237 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Card Container */
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 460px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 26px;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.password-wrapper input {
+    padding-right: 72px; /* Space for Show/Hide button */
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Show / Hide Password Button */
+.toggle-btn {
+    position: absolute;
+    right: 8px;
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+/* Animated Strength Indicator Bar */
+.strength-section {
+    margin-bottom: 20px;
+}
+
+.bar-track {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    transition: width 0.35s ease, background-color 0.35s ease;
+}
+
+/* Strength Color States */
+.bar-fill.weak {
+    width: 33%;
+    background-color: #ef4444;
+}
+
+.bar-fill.medium {
+    width: 66%;
+    background-color: #f59e0b;
+}
+
+.bar-fill.strong {
+    width: 100%;
+    background-color: #22c55e;
+}
+
+.strength-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.strength-text.empty { color: #64748b; }
+.strength-text.weak { color: #dc2626; }
+.strength-text.medium { color: #d97706; }
+.strength-text.strong { color: #16a34a; }
+
+/* Password Rules Checklist */
+.checklist {
+    list-style: none;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checklist li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.checklist li.invalid {
+    color: #64748b;
+}
+
+.checklist li.invalid .icon {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.checklist li.valid {
+    color: #15803d;
+    font-weight: 600;
+}
+
+.checklist li.valid .icon {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Confirm Password Match Feedback */
+.match-text {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 6px;
+    min-height: 18px;
+}
+
+.match-text.matched {
+    color: #16a34a;
+}
+
+.match-text.unmatched {
+    color: #dc2626;
+}
+
+/* Reset Button */
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.reset-btn:hover {
+    background-color: #334155;
+}
+
+.reset-btn:active {
+    transform: scale(0.98);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}

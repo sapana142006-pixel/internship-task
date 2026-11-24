@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Password Strength Checker</h1>
+        <p class="subtitle">Create a secure password to test its strength in real time.</p>
+
+        <!-- Primary Password Field -->
+        <div class="input-group">
+            <label for="passwordInput">Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="passwordInput" placeholder="Enter your password...">
+                <button type="button" id="togglePasswordBtn" class="toggle-btn">Show</button>
+            </div>
+        </div>
+
+        <!-- Strength Indicator Bar & Dynamic Text -->
+        <div class="strength-section">
+            <div class="bar-track">
+                <div id="strengthBar" class="bar-fill"></div>
+            </div>
+            <p id="strengthMessage" class="strength-text empty">Enter a password to check strength</p>
+        </div>
+
+        <!-- Bonus Challenge: Password Requirements Checklist -->
+        <ul class="checklist" id="checklist">
+            <li id="ruleLength" class="invalid"><span class="icon">✖</span> At least 8 characters</li>
+            <li id="ruleUpper" class="invalid"><span class="icon">✖</span> At least one uppercase letter (A–Z)</li>
+            <li id="ruleLower" class="invalid"><span class="icon">✖</span> At least one lowercase letter (a–z)</li>
+            <li id="ruleNumber" class="invalid"><span class="icon">✖</span> At least one number (0–9)</li>
+            <li id="ruleSpecial" class="invalid"><span class="icon">✖</span> At least one special character (@, #, !, $, etc.)</li>
+        </ul>
+
+        <!-- Bonus Challenge: Confirm Password Field -->
+        <div class="input-group confirm-group">
+            <label for="confirmPasswordInput">Confirm Password</label>
+            <input type="password" id="confirmPasswordInput" placeholder="Re-enter your password...">
+            <p id="matchMessage" class="match-text"></p>
+        </div>
+
+        <!-- Bonus Challenge: Reset Button -->
+        <button type="button" id="resetBtn" class="reset-btn">Reset Fields</button>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Store</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-brand">ShopEase</div>
+        <nav class="nav-links">
+            <a href="#products-section">Products</a>
+            <a href="#cart-section">Cart (<span id="navCartCount">0</span>)</a>
+        </nav>
+    </header>
+
+  
+    <section class="hero">
+        <h1>Discover Everyday Essentials</h1>
+        <p>Browse quality products, search by name, and manage your cart easily.</p>
+
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search products (e.g., Headphones, Backpack)...">
+            <button type="button" id="clearSearchBtn" class="clear-btn">Clear</button>
+        </div>
+    </section>
+
+   
+    <main class="main-layout">
+
+        <section id="products-section" class="products-area">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <span id="productCountLabel" class="count-pill">Showing 6 products</span>
+            </div>
+
+            <div id="productsGrid" class="products-grid"></div>
+            <p id="noResultsMsg" class="no-results hidden">No matching products found. Try another search term!</p>
+        </section>
+
+   
+        <aside id="cart-section" class="cart-panel">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span class="cart-badge"><span id="cartItemCount">0</span> items</span>
+            </div>
+
+            <div id="cartItemsContainer" class="cart-items">
+                <p class="empty-cart-msg">Your cart is currently empty.</p>
+            </div>
+
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span>Total Price:</span>
+                    <strong id="totalPrice">$0.00</strong>
+                </div>
+                <button type="button" id="checkoutBtn" class="checkout-btn" disabled>Checkout</button>
+            </div>
+        </aside>
+    </main>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-card">
+        <h1>Rock, Paper, Scissors</h1>
+        <p class="subtitle">Choose your weapon to play against the computer!</p>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <div class="score-box">
+                <span class="score-label">You</span>
+                <span id="userScore" class="score-value">0</span>
+            </div>
+            <div class="score-box">
+                <span class="score-label">Computer</span>
+                <span id="computerScore" class="score-value">0</span>
+            </div>
+        </div>
+
+        <!-- Choice Display Area -->
+        <div class="choices-display">
+            <div class="choice-panel">
+                <p class="panel-title">Your Choice</p>
+                <div id="userChoiceIcon" class="choice-icon">❔</div>
+                <p id="userChoiceText" class="choice-name">-</p>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div class="choice-panel">
+                <p class="panel-title">Computer</p>
+                <div id="computerChoiceIcon" class="choice-icon">❔</div>
+                <p id="computerChoiceText" class="choice-name">-</p>
+            </div>
+        </div>
+
+        <!-- Result & Round Message -->
+        <div id="resultBanner" class="result-banner neutral">
+            <h2 id="resultText">Make Your Move!</h2>
+            <p id="roundMessage" class="round-msg">Click Rock, Paper, or Scissors to start a round.</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="buttons-group">
+            <button id="rockBtn" class="move-btn" data-choice="rock">
+                <span class="btn-emoji">🪨</span>
+                <span>Rock</span>
+            </button>
+            <button id="paperBtn" class="move-btn" data-choice="paper">
+                <span class="btn-emoji">📄</span>
+                <span>Paper</span>
+            </button>
+            <button id="scissorsBtn" class="move-btn" data-choice="scissors">
+                <span class="btn-emoji">✂️</span>
+                <span>Scissors</span>
+            </button>
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restartBtn" class="restart-btn">Restart Game</button>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

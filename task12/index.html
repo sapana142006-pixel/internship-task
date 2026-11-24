@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container" id="gameCard">
+    
+        <div class="status-bar">
+            <span class="badge attempts-badge">Attempts Left: <strong id="attemptsLeft">5</strong></span>
+            <span class="badge score-badge">Score: <strong id="scoreDisplay">0</strong></span>
+        </div>
+
+        <h1>Guess the Number!</h1>
+        <p class="instruction">Guess a number between 1 and 20.</p>
+
+
+        <div class="input-group">
+            <input type="number" id="guessInput" min="1" max="20" placeholder="1 - 20">
+            <button id="checkBtn" class="btn primary-btn">Check Guess</button>
+        </div>
+
+     
+        <div id="messageArea" class="message-box">Good luck! Enter your first guess.</div>
+
+       
+        <button id="playAgainBtn" class="btn secondary-btn hidden">Play Again</button>
+    </div>
+
+    <
+    <div id="confettiContainer" class="confetti-container"></div>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
